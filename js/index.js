@@ -2,7 +2,7 @@
  * Ejercicio 1
  * En una empresa se conoce el nombre y edad de su personal,
  * con un sueldo base de $150. Trabajan obreros (1) y
- * administrativos (2). 
+ * administrativos (2).
  * Los obreros hasta con 3 hijos reciben $50
  * de bono, con más de 3 hijos reciben $70.
  *  Los administrativos

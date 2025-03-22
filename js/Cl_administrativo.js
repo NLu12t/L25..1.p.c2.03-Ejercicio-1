@@ -1,19 +1,19 @@
 import Cl_persona from "./Cl_persona.js";
 
 export default class Cl_administrativo extends Cl_persona {
-    constructor(nombre, edad, nivel) {
-        super(nombre, edad);
-        this.nivel = nivel;
+  constructor(nombre, edad, nivel) {
+    super(nombre, edad);
+    this.nivel = nivel;
+  }
+  incentivo() {
+    if (this.esMayorDeEdad()) {
+      return this.nivel === 1 ? 50 : 100;
     }
-    incentivo() {
-      if (this.esMayorDeEdad()) {
-          return this.nivel === 1 ? 50 : 100;
-      }
-      return 0;
+    return 0;
   }
 
   sueldo() {
-      return this.sueldoBase() + this.incentivo();
+    return this.sueldoBase() + this.incentivo();
   }
 
   mostrar() {
@@ -28,5 +28,5 @@ export default class Cl_administrativo extends Cl_persona {
         <td>${this.incentivo()}</td>
         <td>${this.sueldo()}</td>
     </tr>`;
-}
+  }
 }
